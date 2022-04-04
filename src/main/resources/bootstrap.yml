@@ -1,0 +1,19 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+  endpoint:
+    health:
+      show-details: always
+    beans:
+      enabled: true
+    refresh:
+      enabled: true
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8089
+      label: main
+  application:
+    name: allClientVariables
